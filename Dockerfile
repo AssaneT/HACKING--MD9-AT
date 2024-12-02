@@ -14,8 +14,8 @@ WORKDIR /root/my_app/
 
 
 COPY package.json .
-RUN npm install pm2 -g
-RUN npm install
+RUN npm ci install pm2 -g
+RUN npm ci install
 
 COPY . .
 
